@@ -1251,6 +1251,7 @@ MonoBehaviour:
   StageTitle: {fileID: 290149299}
   LessonStage: {fileID: 201553324}
   lessonContainer: {fileID: 791977165}
+  LessonData: {fileID: 0}
 --- !u!1 &906359588
 GameObject:
   m_ObjectHideFlags: 0
@@ -1644,6 +1645,7 @@ MonoBehaviour:
   StageTitle: {fileID: 290149299}
   LessonStage: {fileID: 201553324}
   lessonContainer: {fileID: 791977165}
+  LessonData: {fileID: 0}
 --- !u!1 &1361030932
 GameObject:
   m_ObjectHideFlags: 0
@@ -1782,7 +1784,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1403971826
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1869,6 +1871,7 @@ MonoBehaviour:
   StageTitle: {fileID: 290149299}
   LessonStage: {fileID: 201553324}
   lessonContainer: {fileID: 791977165}
+  LessonData: {fileID: 0}
 --- !u!1 &1646586370
 GameObject:
   m_ObjectHideFlags: 0
@@ -2476,6 +2479,7 @@ MonoBehaviour:
   StageTitle: {fileID: 290149299}
   LessonStage: {fileID: 201553324}
   lessonContainer: {fileID: 791977165}
+  LessonData: {fileID: 0}
 --- !u!1 &1945870868
 GameObject:
   m_ObjectHideFlags: 0
@@ -2580,6 +2584,7 @@ MonoBehaviour:
   StageTitle: {fileID: 290149299}
   LessonStage: {fileID: 201553324}
   lessonContainer: {fileID: 791977165}
+  LessonData: {fileID: 0}
 --- !u!1001 &204309369895776253
 PrefabInstance:
   m_ObjectHideFlags: 0

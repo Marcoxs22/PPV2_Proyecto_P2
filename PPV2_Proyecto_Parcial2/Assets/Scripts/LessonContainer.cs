@@ -19,6 +19,9 @@ public class LessonContainer : MonoBehaviour
     [Header("External GameObject Configuration")]
     public GameObject lessonContainer;
 
+    [Header("Lesson Data")]
+    public ScriptableObject LessonData;
+
 
     //// Start is called before the first frame update
     void Start()
