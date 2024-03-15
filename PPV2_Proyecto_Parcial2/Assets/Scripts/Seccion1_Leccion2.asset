@@ -15,7 +15,7 @@ MonoBehaviour:
   Lessson: 0
   leccionList:
   - ID: 0
-    lessons: "\xBFEs un contenedor de informaci\xF3n?"
+    lessons: "Es un contenedor de informaci\xF3n:"
     options:
     - Clase
     - "Funci\xF3n"
