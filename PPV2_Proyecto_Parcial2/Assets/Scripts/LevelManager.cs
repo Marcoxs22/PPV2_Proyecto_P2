@@ -6,28 +6,28 @@ using TMPro;
 public class LevelManager : MonoBehaviour
 {
     ////Instancia de la clase
-    //[Header("Level Data")]
-    //public Subject Lesson;
+    [Header("Level Data")]
+    public Subject Lesson;
 
-    //[Header("User Interface")]
-    //public TMP_Text QuestionTxt;
-    //public TMP_Text livestxt;
-    //public List<OptionBtm> Options;
-    //public GameObject CheckButton;
-    //public GameObject AnswerContainer;
-    //public Color Green;
-    //public Color Red;
+    [Header("User Interface")]
+    public TMP_Text QuestionTxt;
+    public TMP_Text livestxt;
+    public List<OptionBtm> Options;
+    public GameObject CheckButton;
+    public GameObject AnswerContainer;
+    public Color Green;
+    public Color Red;
 
-    //[Header("Game Configuration")]
-    //public int questionAmount = 0;
-    //public int currentQuestion = 0;
-    //public string question;
-    //public string correctAnswer;
-    //public int answerFromPlayer;
-    //public int lives = 5;
+    [Header("Game Configuration")]
+    public int questionAmount = 0;
+    public int currentQuestion = 0;
+    public string question;
+    public string correctAnswer;
+    public int answerFromPlayer;
+    public int lives = 5;
 
-    //[Header("Current Lesson")]
-    //public Leccion currentLesson;
+    [Header("Current Lesson")]
+    public Leccion currentLesson;
 
 
     ////(.5 pts perdidos) Patron Singleton: Es un patron de diseño, encargado de crear una instancia de la clase
@@ -77,7 +77,7 @@ public class LevelManager : MonoBehaviour
 
 
     //        }
-            
+
     //    }
     //    else
     //    {
@@ -160,6 +160,6 @@ public class LevelManager : MonoBehaviour
     //// Update is called once per frame
     //void Update()
     //{
-        
+
     //}
 }
