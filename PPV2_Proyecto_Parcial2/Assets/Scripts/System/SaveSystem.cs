@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
+//Save System creado el 20 03 24
 public class SaveSystem : MonoBehaviour
 {
     public float PosX;
