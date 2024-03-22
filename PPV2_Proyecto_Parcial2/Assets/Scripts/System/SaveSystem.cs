@@ -31,7 +31,7 @@ public class SaveSystem : MonoBehaviour
         //CreateFile("Marco position", ".data");
         Debug.Log(ReadFile("Marco position", ".data"));
 
-        subject = LoadFromJSON<SubjectContainer>("Lession 1.json");
+        subject = LoadFromJSON<SubjectContainer>("Lession 1");
     }
 
 
