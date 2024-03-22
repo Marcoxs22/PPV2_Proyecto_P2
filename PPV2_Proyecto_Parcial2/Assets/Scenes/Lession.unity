@@ -1670,9 +1670,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40e19b201c303de4d83928e778e07269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PosX: 0
-  PosY: 0
-  PosZ: 0
+  data:
+    ID: 0
+    lessons: Este acceso permite acceder a solo atributos heredados
+    options:
+    - 'void '
+    - start
+    - private
+    - protected
+    - public
+    correctAnswer: 3
+  subject:
+    Lesson: 0
+    LeccionList: []
 --- !u!4 &1006165578
 Transform:
   m_ObjectHideFlags: 0

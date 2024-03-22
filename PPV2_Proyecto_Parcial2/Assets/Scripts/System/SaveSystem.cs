@@ -2,14 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using TMPro;
 
 //Save System creado el 20 03 24
 public class SaveSystem : MonoBehaviour
 {
-    public float PosX;
-    public float PosY;
-    public float PosZ;
     public static SaveSystem instance;
+
+    public Leccion data;
+    public SubjectContainer subject;
     private void Awake()
     {
         if (instance != null)
@@ -24,25 +25,18 @@ public class SaveSystem : MonoBehaviour
 
     private void Start()
     {
-        //SaveToJSON("LecciónDunny", data);
+        SaveToJSON("LeccionDummy", data);
         //SaveToJSON("SubjectDunny", subject);
 
-        CreateFile("Marco position", ".data");
+        //CreateFile("Marco position", ".data");
         Debug.Log(ReadFile("Marco position", ".data"));
-        //Subject = LoadFromJSON<SubjectContainer>("SubjectDunny");
+
+        subject = LoadFromJSON<SubjectContainer>("Lession 1.json");
     }
 
 
 
-    //public void CreateFile(string fileName, string extension)
-    //{
-
-    //}
-
-    //public void SaveToJSON(string _fileName, object _data)
-    //{
-
-    //}
+   
 
     public void CreateFile(string _name, string _extension)
     {
@@ -104,4 +98,24 @@ public class SaveSystem : MonoBehaviour
         }
     }
 
+    public T LoadFromJSON<T>(string _fileName) where T : new()
+    {
+        T Dato = new T();
+        string path = Application.dataPath + "/Resources/JSONS/" + _fileName + ".json";
+        string JSONData = "";
+        if (File.Exists(path))
+        {
+            JSONData = File.ReadAllText(path);
+            Debug.Log("JSON STRING: " + JSONData);
+        }
+        if (JSONData.Length !=0)
+        {
+            JsonUtility.FromJsonOverwrite(JSONData, Dato);
+        }
+        else
+        {
+            Debug.LogWarning("ERROR - FileSystem: JSON Data is empty, check for local variable [String JSONData");
+        }
+        return Dato;
+    }
 }
